@@ -34,12 +34,12 @@ const Login: React.FC = () => {
       ) : (
         <div>
           <button onClick={handleGoogleLogin} disabled={loading}>
-            {loading ? "Singingg in.." : "Sing-in With Google"}
+            {loading ? "Singingg in.." : "Sign-in With Google"}
           </button>
           {error && <p style={{ color: 'red' }}>{error}</p>}
           {rejected && (
             <p style={{ color: 'red' }}>
-              Your need to log-in using Institutional Email.
+              You need to log-in using Institutional Email.
             </p>
           )}
         </div>
