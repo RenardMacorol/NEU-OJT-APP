@@ -35,3 +35,4 @@ Configures your TypeScript compiler, defining rules for how your TypeScript file
 
 ## `.gitignore`
 Specifies files or directories to exclude from Git version control (e.g., `node_modules`, build files).
+
