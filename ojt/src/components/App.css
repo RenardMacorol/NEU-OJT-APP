@@ -72,39 +72,3 @@
   height: 150px;
   flex: 1 1 calc(50% - 10px);
 }
-
-/* .navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #79797b;
-  padding: 20px;
-  width: 200px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  border-radius: 0 10px 10px 0;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  transition: left 0.3s ease;
-  box-sizing: border-box;
-  z-index: 1000;
-}
-
-.navbar.hidden {
-  left: -250px;
-}
-
-.navbar.visible {
-  left: 0;
-}
-
-.menu-icon {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 2000;
-} */
