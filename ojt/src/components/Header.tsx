@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import "./App.css";
 import React from "react";
 import AppName from "./AppName";
