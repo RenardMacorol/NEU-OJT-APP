@@ -72,6 +72,7 @@
   height: 150px;
   flex: 1 1 calc(50% - 10px);
 }
+<<<<<<< HEAD
 
 /* .navbar {
   display: flex;
@@ -108,3 +109,5 @@
   font-size: 24px;
   z-index: 2000;
 } */
+=======
+>>>>>>> bcc75b04bee6bc2b1ae62791b3e8886049abdff5
