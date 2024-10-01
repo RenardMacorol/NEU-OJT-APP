@@ -3,8 +3,7 @@ import { signInWithGoogle } from '../services/GoogleAuth';
 
 const Login: React.FC = () => {
   const [user, setUser] = useState<any>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [rejected, setRejected] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null); const [rejected, setRejected] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
 
   const handleGoogleLogin = async () => {
@@ -34,7 +33,7 @@ const Login: React.FC = () => {
       ) : (
         <div>
           <button onClick={handleGoogleLogin} disabled={loading}>
-            {loading ? "Singingg in.." : "Sign-in With Google"}
+            {loading ? "Loading" : "Sign-in With Google"}
           </button>
           {error && <p style={{ color: 'red' }}>{error}</p>}
           {rejected && (
