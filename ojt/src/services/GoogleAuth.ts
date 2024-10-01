@@ -26,7 +26,6 @@ export const signInWithGoogle = async () => {
         return user;
       } else {
         return user;
-        console.log("User Exist")
       }
     } else {
       console.log("Not Inst Email")
