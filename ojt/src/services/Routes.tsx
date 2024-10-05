@@ -10,7 +10,7 @@ import UpdateCompany from "../pages/UpdateCompany";
 const Routes = createBrowserRouter([
     {
         path: "/",
-        element: <LoginPage />,
+        element: <Dashboard />,
     },
 
     {
