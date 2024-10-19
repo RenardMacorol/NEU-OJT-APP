@@ -5,10 +5,10 @@ import Logout from "./Logout";
 
 const Header: React.FC = () => {
     return (
-           <div className = 'header'>
+           <header>
                 <AppName />
                 <Logout />
-           </div>
+           </header>
     )
 }
 

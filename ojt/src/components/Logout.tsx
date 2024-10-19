@@ -6,7 +6,8 @@ const Logout: React.FC = () => {
     const navigate = useNavigate();
 
     return (
-            <button className="logout-button" onClick={() => navigate('/login')}>Logout</button>
+        // added for testing, no proper logout function just yet
+        <button className="logout-button" onClick={() => navigate('/login')}>Logout</button>
     )
 }
 
