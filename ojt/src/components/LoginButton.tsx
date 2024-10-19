@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState } from 'react';
 import { signInWithGoogle } from '../services/GoogleAuth';
+import Dashboard from "../pages/Dashboard";
 
 const Login: React.FC = () => {
   const [user, setUser] = useState<any>(null);
@@ -29,7 +30,7 @@ const Login: React.FC = () => {
     <div style={{ textAlign: 'center' }}>
       {user ? (
         <div>
-          <h3>Welcome to the Neu App, {user.displayName}</h3>
+          <Dashboard />
         </div>
       ) : (
         <div>

@@ -1,4 +1,4 @@
-import { createBrowserRouter,  RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
 import StudentInput from "../pages/StudentInput";
 import NoPage from "../pages/NoPage";
@@ -9,28 +9,28 @@ import UpdateCompany from "../pages/UpdateCompany";
 
 const Routes = createBrowserRouter([
     {
-        path: "/",
-        element: <Dashboard />,
-    },
-
-    {
         path: '/login',
         element: <LoginPage />
     },
 
     {
-      path: '/dashboard',
-      element: <Dashboard />,
+        path: "/",
+        element: <LoginPage />,
     },
-  
+
     {
-      path: '/studentinput',
-      element: <StudentInput />,
+        path: '/dashboard',
+        element: <Dashboard />,
     },
-  
+
     {
-      path: '/uploadreq',
-      element: <UploadReq />,
+        path: '/studentinput',
+        element: <StudentInput />,
+    },
+
+    {
+        path: '/uploadreq',
+        element: <UploadReq />,
     },
 
     {
@@ -41,11 +41,11 @@ const Routes = createBrowserRouter([
     {
         path: '/updatecompany',
         element: <UpdateCompany />,
-      },
+    },
 
     {
-      path: '/*',
-      element: <NoPage />,
+        path: '/*',
+        element: <NoPage />,
     },
 ]);
 
