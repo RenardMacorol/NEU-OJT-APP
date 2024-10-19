@@ -1,6 +1,6 @@
 import "../services/Routes";
 import { useNavigate } from "react-router-dom";
-import "./App.css";
+import "../styles/App.css";
 
 const MainOptions: React.FC = () => {
     const navigate = useNavigate();

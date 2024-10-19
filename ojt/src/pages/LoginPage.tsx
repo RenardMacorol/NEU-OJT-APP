@@ -1,10 +1,11 @@
 import React from "react";
-import Login from "../components/LoginButton";
+import LoginUI from "../components/LoginUI";
+import "../styles/LoginUI.css";
 
 const LoginPage: React.FC = () => {
     return (
-        <div>
-            <Login />
+        <div className="login-UI">
+            <LoginUI />
         </div>
     )
 }

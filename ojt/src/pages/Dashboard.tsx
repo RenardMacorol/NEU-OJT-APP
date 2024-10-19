@@ -2,7 +2,7 @@ import React from 'react';
 import MainOptions from "../components/MainOptions";
 import SearchBar from "../components/SearchBar";
 import Header from "../components/Header";
-import "../components/App.css"
+import "../styles/App.css"
 
 const Dashboard: React.FC = () => {
   return ( 

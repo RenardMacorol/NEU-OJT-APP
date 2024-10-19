@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+.login-UI{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    max-width: 550px;
+    max-height: 90vh; 
+    background-color: #D9D9D9;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: auto;
+    padding: 2.5em 0;
+}
+
+.login-container h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+.login-container h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 3em;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: grey;
+    border-radius: 5px;
+    height: 2em;
+    border: none;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(152, 152, 152);
+    color: black;
+}
+
+.login-container img{
+    max-width: 100%;
+    display: block;
+}
+
+#google-logo{
+    width: 1em;
+    height: auto;
+    display: block;
+    margin-right: 0.6em;   
+}
+
+#neu_logo{
+    width: 25%;
+    height: auto;
+}
