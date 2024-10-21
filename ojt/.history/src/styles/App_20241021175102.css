@@ -95,12 +95,13 @@ body{
   height: 100vh;
   position: fixed;
   top: 0;
+  left: 0px;
   border-radius: 0 10px 10px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   transition: left 0.3s ease;
   box-sizing: border-box;
   z-index: 1000;
-  align-items: center;
-  transition: left 0.5s ease-in-out;
+  max-width: 20%;
 }
 
 .sidebar.hidden {
@@ -109,10 +110,6 @@ body{
 
 .sidebar.visible {
   left: 0;
-}
-
-.sidebar h1{
-  all: unset;
 }
 
 .menu-icon {
@@ -127,22 +124,14 @@ body{
   padding: 0;
   outline: none;
   color: #f0f0f0;
-  transition: left 0.5s ease-in-out;
 }
-
 
 .menu-icon:hover{
   opacity: 0.75;
 }
 
 .sidebar .app-name{
-  margin: 20px 0 -20px;
-  font-weight: 800;
-  font-size: 16px;
-  font-style: italic;
-  color: #e0e0e0;
-  text-align: center;
-  align-self: center;
+  font-size: 1em;
 }
 
 .sidebar ul{
@@ -159,7 +148,7 @@ body{
   margin: 20px 0;
   max-width: 100%;
   transition: ease-in-out 0.5s;
-  padding: 10px 10px;
+  padding: 10px 0;
 }
 
 .sidebar ul li:hover{
@@ -168,31 +157,7 @@ body{
 }
 
 .sidebar a{
-  font-size: 1.25rem;
+  font-size: min(1.25rem, 2vw);
   text-decoration: none;
   color: #f0f0f0;
-}
-
-@media screen and (max-width: 768px) {
-  .sidebar {
-    width: 100vw;
-    height: 100vh; 
-    left: 0; 
-  }
-
-  .sidebar.hidden {
-    left: -100vw;
-  }
-
-  .app-container {
-    margin-left: 0;
-  }
-
-  .app-container.sidebar-visible {
-    margin-left: 100vw;
-  }
-
-  .sidebar .app-name{
-    font-size: 20px;
-  }
 }

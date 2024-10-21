@@ -96,6 +96,7 @@ body{
   position: fixed;
   top: 0;
   border-radius: 0 10px 10px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   transition: left 0.3s ease;
   box-sizing: border-box;
   z-index: 1000;
@@ -136,9 +137,7 @@ body{
 }
 
 .sidebar .app-name{
-  margin: 20px 0 -20px;
-  font-weight: 800;
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
   color: #e0e0e0;
   text-align: center;
@@ -190,9 +189,5 @@ body{
 
   .app-container.sidebar-visible {
     margin-left: 100vw;
-  }
-
-  .sidebar .app-name{
-    font-size: 20px;
   }
 }

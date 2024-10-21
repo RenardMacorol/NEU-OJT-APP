@@ -96,6 +96,7 @@ body{
   position: fixed;
   top: 0;
   border-radius: 0 10px 10px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   transition: left 0.3s ease;
   box-sizing: border-box;
   z-index: 1000;
@@ -104,21 +105,17 @@ body{
 }
 
 .sidebar.hidden {
-  left: -225px;
+  left: -255px;
 }
 
 .sidebar.visible {
   left: 0;
 }
 
-.sidebar h1{
-  all: unset;
-}
-
 .menu-icon {
-  position: fixed;
+  position: absolute;
   top: 20px;
-  left: 20px;
+  right: max(-4em, -10vw);
   cursor: pointer;
   font-size: 24px;
   z-index: 2000;
@@ -127,22 +124,23 @@ body{
   padding: 0;
   outline: none;
   color: #f0f0f0;
-  transition: left 0.5s ease-in-out;
+  transition: left 1s ease-in-out;
 }
 
+.sidebar.hidden .menu-icon{
+  
+}
+
+.sidebar.visible .menu-icon{
+  transform: translateX(max(-4em, -10vw));
+}
 
 .menu-icon:hover{
   opacity: 0.75;
 }
 
 .sidebar .app-name{
-  margin: 20px 0 -20px;
-  font-weight: 800;
-  font-size: 16px;
-  font-style: italic;
-  color: #e0e0e0;
-  text-align: center;
-  align-self: center;
+  font-size: 1em;
 }
 
 .sidebar ul{
@@ -190,9 +188,5 @@ body{
 
   .app-container.sidebar-visible {
     margin-left: 100vw;
-  }
-
-  .sidebar .app-name{
-    font-size: 20px;
   }
 }
