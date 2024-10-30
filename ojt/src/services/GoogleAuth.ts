@@ -21,7 +21,8 @@ export const signInWithGoogle = async () => {
           institutional_email: user.email,
           photoUrl: user.photoURL,
           createdAt: new Date(),
-          role: 'Student'
+          role: 'Student',
+          uploadedResume: false
         })
         return user;
       } else {

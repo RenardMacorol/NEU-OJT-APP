@@ -1,12 +1,14 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+import StudentInfo from "../pages/StudentInfo";
 import Dashboard from "../pages/Dashboard";
-import StudentInput from "../pages/StudentInput";
 import NoPage from "../pages/NoPage";
 import LoginPage from "../pages/LoginPage";
 import UploadReq from "../pages/UploadReq";
-import GenEndLetter from "../pages/GenEndLetter";
 import UpdateCompany from "../pages/UpdateCompany";
+import { getAuth } from "firebase/auth";
+import MoaValidation from "../pages/MoaValidation";
 
+const auth = getAuth();
 const Routes = createBrowserRouter([
     {
         path: '/login',
@@ -20,28 +22,28 @@ const Routes = createBrowserRouter([
 
     {
         path: '/dashboard',
-        element: <Dashboard />,
+        element: auth ? <Dashboard /> : <LoginPage />,
     },
 
     {
-        path: '/studentinput',
-        element: <StudentInput />,
+        path: '/studentInfo',
+        element: auth ? <StudentInfo /> : <LoginPage />,
     },
 
     {
         path: '/uploadreq',
-        element: <UploadReq />,
-    },
-
-    {
-        path: '/genendletter',
-        element: <GenEndLetter />,
+        element: auth ? <UploadReq /> : <LoginPage />
     },
 
     {
         path: '/updatecompany',
-        element: <UpdateCompany />,
+        element: auth ? <UpdateCompany /> : <LoginPage />,
     },
+    {
+        path: '/moaValidation',
+        element: auth ? <MoaValidation /> : <LoginPage />,
+    },
+
 
     {
         path: '/*',
