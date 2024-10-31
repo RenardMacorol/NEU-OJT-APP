@@ -4,7 +4,7 @@ import "../styles/LoginUI.css";
 
 const LoginPage: React.FC = () => {
     return (
-        <div className="login-UI">
+        <div >
             <LoginUI />
         </div>
     )
