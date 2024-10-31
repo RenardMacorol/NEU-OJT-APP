@@ -12,11 +12,11 @@ const MainOptions: React.FC = () => {
     }
 
     return (
-        <section className="options">
-            <button className="option-button" onClick={() => navigate('/studentInfo')}>Enter Student Input</button>
+        <section className="options flex flex-row flex-wrap max-w-xl justify-center justify-self-center">
             <button className="option-button" onClick={() => navigate('/uploadreq')}>Upload Requirements</button>
             <button className="option-button" onClick={handleGenerate}>Generate Endorsement Letter</button>
-            {generate ? <p>{generate}</p> : <p></p>}
+            {generate ? <p className="">{generate}</p> : <p></p>}
+            <button className="option-button" onClick={() => navigate('/studentInfo')}>Enter Student Input</button>
             <button className="option-button" onClick={() => navigate('/updatecompany')}>Update Company</button>
         </section>
     )

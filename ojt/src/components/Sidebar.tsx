@@ -12,10 +12,10 @@ const Sidebar= () => {
     
 
     return (
+        // need to change style
         <div>
             <span className="menu-icon" onClick={toggleSidebar}>☰</span>
             <div className={`sidebar ${isVisible ? "visible" : "hidden"}`}>
-            <AppName /> 
             <ul>
                 <li><a href="/studentinput">Student Input</a></li>
                 <li><a href="/uploadreq">Upload Requirements</a></li>
