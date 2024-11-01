@@ -4,7 +4,7 @@ import "../styles/LoginUI.css";
 
 const LoginPage: React.FC = () => {
     return (
-        <div className="login-UI">
+        <div className="bg-gradient-to-t from-teal-500 to-blue-900" >
             <LoginUI />
         </div>
     )

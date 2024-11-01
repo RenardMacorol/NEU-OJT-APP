@@ -11,7 +11,7 @@ const Login: React.FC = () => {
   const [error, setError] = useState<string | null>(null); const [rejected, setRejected] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const navigate = useNavigate();
-  
+
 
   const handleGoogleLogin = async () => {
     setLoading(true);
@@ -31,8 +31,8 @@ const Login: React.FC = () => {
     }
   };
 
-  useEffect(() =>{
-    if(user){
+  useEffect(() => {
+    if (user) {
       navigate('/dashboard');
     }
   });
@@ -44,15 +44,17 @@ const Login: React.FC = () => {
           <Dashboard />
         </div>
       ) : (
-        <div>
-          
-          <button onClick={handleGoogleLogin} disabled={loading}>
-            <img src={googleLogo} id="google-logo"></img>
+        <div className="flex flex-col">
+
+          <button className="flex items-center justify-center text-base bg-gray-300  rounded-md 
+              h-8 border-none mt-4 mb-5 py-4 px-8 cursor-pointer hover:bg-gray-400 hover:text-black transition"
+            onClick={handleGoogleLogin} disabled={loading}>
+            <img src={googleLogo} className="w-4 h-auto mr-2" id="google-logo"></img>
             {loading ? "Loading" : "Sign-in With Google"}
           </button>
-          {error && <p style={{ color: 'red' }}>{error}</p>}
+          {error && <p className="text-red-300 mt-5">{error}</p>}
           {rejected && (
-            <p style={{ color: 'red' }}>
+            <p className="text-red-300">
               You need to log-in using Institutional Email.
             </p>
           )}
