@@ -2,9 +2,9 @@ import "../styles/App.css";
 import React, { useEffect, useState } from 'react';
 import { signInWithGoogle } from '../services/GoogleAuth';
 import Dashboard from "../pages/Dashboard";
-import googleLogo from "../public/img/google-logo.png";
 import "../services/Routes";
 import { useNavigate } from "react-router-dom";
+import google_logo from "../public/images/google-logo.png";
 
 const Login: React.FC = () => {
   const [user, setUser] = useState<any>(null);
@@ -49,7 +49,7 @@ const Login: React.FC = () => {
           <button className="flex items-center justify-center text-base bg-gray-300  rounded-md 
               h-8 border-none mt-4 mb-5 py-4 px-8 cursor-pointer hover:bg-gray-400 hover:text-black transition"
             onClick={handleGoogleLogin} disabled={loading}>
-            <img src={googleLogo} className="w-4 h-auto mr-2" id="google-logo"></img>
+            <img src={google_logo} className="w-4 h-auto mr-2" id="google-logo"></img>
             {loading ? "Loading" : "Sign-in With Google"}
           </button>
           {error && <p className="text-red-300 mt-5">{error}</p>}

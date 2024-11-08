@@ -1,6 +1,6 @@
 import Login from "./LoginButton";
 import "../styles/LoginUI.css";
-import neu_logo from "../public/img/neu_logo.png";
+import neu_logo from "../public/images/neu_logo.png";
 
 const LoginUI: React.FC = () => {
     return (
