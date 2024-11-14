@@ -11,10 +11,10 @@ const UploadReq: React.FC = () => {
             <div className="w-5/6 max-w-90 bg-gray-100 rounded-lg shadow-lg p-2 space-y-4">
                 <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900">Upload Requirements</h1>
                 <form className="space-y-4">
-                    <ParentConsentField />
-                    <MedicalExamField />
-                    <PsychologyExamField />
                     <ResumeField />
+                    <MedicalExamField />
+                    <ParentConsentField />
+                    <PsychologyExamField />
                 </form>
 
                 <MoaValidationButton />
